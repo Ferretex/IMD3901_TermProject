@@ -14,7 +14,7 @@
 
         <a-scene>
             <a-assets timeout="10000">
-
+                <a-asset-item id="FirstRoom_model" src="assets/FirstRoom_Layout.glb" response-type="arraybuffer"></a-asset-item>
             </a-assets>
 
             <a-entity id="camera" position="0 1.6 0" camera wasd-controls look-controls>
@@ -42,7 +42,10 @@
                     <a-entity class="wall" position="0 5 -13" rotation="0 0 0" geometry="primitive:plane; width:30; height:10;" material="color:white;" shadow="receive:true; cast:false"></a-entity>
                 </a-entity>
                 
-        </a-entity>
+            </a-entity>
+
+            <a-entity   class="interactive room" id="room1_Layout" rotation="0 0 0" scale="1 1 1" position="0 0 0" gltf-model="#FirstRoom_model">
+            </a-entity>
 
 
             <a-entity id="environment" environment="preset:starry"></a-entity>
