@@ -17,9 +17,11 @@
             <a-assets timeout="10000">
                 <a-asset-item id="walls_model" src="assets/FirstRoom_walls.glb"></a-asset-item>
                 <a-asset-item id="floor_model" src="assets/floorNav.glb"></a-asset-item>
+                <a-asset-item id="sensorama_model" src="assets/sensorama.glb"></a-asset-item>
+                <a-asset-item id="roof_model" src="assets/roof.glb"></a-asset-item>
             </a-assets>
 
-            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 0" nav-mesh></a-entity>
+            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 -4" nav-mesh></a-entity>
 
             <a-entity id="rig" movement-controls="controls: keyboard, touch; speed: 0.5; constrainToNavMesh: true;">
                 <a-entity id="player" position="0 1.6 0" camera look-controls>
@@ -40,9 +42,12 @@
             animation__click="property:color; from: #FFC65D; to: #fc8403; startEvents:click; dur:300;">
             </a-sphere>
 
-            <a-entity id="roomPos" position="0 0.1 0">
+            <a-entity id="sensorama"  scale="0.1 0.1 0.1" position="0.5 0.2 1" gltf-model="#sensorama_model"></a-entity>
+
+            <a-entity   id="roof" scale="0.7 0.7 0.7" position="0 3.9 -4" gltf-model="#roof_model"></a-entity>
+            <a-entity id="roomPos" position="0 0.1 -4">
                 <a-entity id="roomRot" rotation="0 0 0">
-                    <a-entity   id="car" scale="0.5 0.5 0.5" gltf-model="#walls_model"></a-entity>
+                    <a-entity   id="walls" scale="0.5 0.5 0.5" gltf-model="#walls_model"></a-entity>
                 </a-entity>
             </a-entity>
 
