@@ -19,9 +19,10 @@
                 <a-asset-item id="floor_model" src="assets/floorNav.glb"></a-asset-item>
                 <a-asset-item id="sensorama_model" src="assets/sensorama.glb"></a-asset-item>
                 <a-asset-item id="roof_model" src="assets/roof.glb"></a-asset-item>
+                <a-asset-item id="table_model" src="assets/low_height_coffee_table.glb"></a-asset-item>
             </a-assets>
 
-            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 -3" nav-mesh></a-entity>
+            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 -3" scale="0.8 0.8 0.8" nav-mesh></a-entity>
 
             <a-entity id="rig" movement-controls="controls: keyboard, touch; speed: 0.5; constrainToNavMesh: true;">
                 <a-entity id="player" position="0 1.6 0" camera look-controls>
@@ -43,6 +44,7 @@
             </a-sphere>
 
             <a-entity id="sensorama"  scale="0.1 0.1 0.1" position="0.5 0.2 1" gltf-model="#sensorama_model"></a-entity>
+            <a-entity id="coffee_table"  scale="0.7 1 0.7" rotation="0 90 0" position="-0.25 0 -1.25" gltf-model="#table_model"></a-entity>
 
             <a-entity   id="roof" scale="0.7 0.7 0.7" position="0 3.9 -3" gltf-model="#roof_model"></a-entity>
             <a-entity id="roomPos" position="0 0.1 -3">
