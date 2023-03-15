@@ -14,7 +14,7 @@
 
         <a-scene>
             <a-assets timeout="10000">
-
+                <a-asset-item id="walls_model" src="assets/FirstRoom_walls.glb" response-type="arraybuffer"></a-asset-item>
             </a-assets>
 
             <a-entity id="camera" position="0 1.6 0" camera wasd-controls look-controls>
@@ -33,19 +33,14 @@
             animation__click="property:color; from: #FFC65D; to: #fc8403; startEvents:click; dur:300;">
             </a-sphere>
 
-            <a-entity id="room">
-                <a-entity class="ground" position="0 0.02 -5" rotation="-90 0 0" geometry="primitive:plane; width:16; height:16;" material="color:white;" shadow="receive:true; cast:false"></a-entity>
-                <a-entity id="walls">
-                    <a-entity class="wall" position="8 5 -5" rotation="0 -90 0" geometry="primitive:plane; width:30; height:10;" material="color:white;" shadow="receive:true; cast:false"></a-entity>
-                    <a-entity class="wall" position="-8 5 -5" rotation="0 90 0" geometry="primitive:plane; width:30; height:10;" material="color:white;" shadow="receive:true; cast:false"></a-entity>
-                    <a-entity class="wall" position="0 5 3" rotation="0 180 0" geometry="primitive:plane; width:30; height:10;" material="color:white;" shadow="receive:true; cast:false"></a-entity>
-                    <a-entity class="wall" position="0 5 -13" rotation="0 0 0" geometry="primitive:plane; width:30; height:10;" material="color:white;" shadow="receive:true; cast:false"></a-entity>
+            <a-entity id="roomPos" position="0 0.1 0">
+                <a-entity id="roomRot" rotation="0 0 0">
+                    <a-entity   id="car" scale="1 1 1" gltf-model="#walls_model"></a-entity>
                 </a-entity>
-                
-        </a-entity>
+            </a-entity>
 
 
-            <a-entity id="environment" environment="preset:starry"></a-entity>
+            <a-entity id="environment" environment="preset:default"></a-entity>
         </a-scene>
     </body>
 </html>
