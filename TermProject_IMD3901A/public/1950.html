@@ -21,6 +21,7 @@
                 <a-asset-item id="sensorama_model" src="assets/sensorama.glb"></a-asset-item>
                 <a-asset-item id="roof_model" src="assets/roof.glb"></a-asset-item>
                 <a-asset-item id="table_model" src="assets/low_height_coffee_table.glb"></a-asset-item>
+                <a-asset-item id="nasaview_model" src="assets/NasaView.gltf"></a-asset-item>
 
                 <img id="sensorama1_img" src="assets/sensorama-patent.png" crossorigin="anonymous">
                 <img id="sensorama2_img" src="assets/sensorama2.jpg" crossorigin="anonymous">
@@ -99,6 +100,8 @@
                     animation__leave="startEvents: mouseleave; property: scale; to: 0.5 0.5 0.5; dur: 100"
                     animation__click="property:color; from: #FFC65D; to: #fc8403; startEvents:click; dur:300;">
             </a-sphere>
+
+            <a-entity id="nasaView" scale="0.2 0.2 0.2" position="0 1.2 -2" rotation="0 180 0" gltf-model="#nasaview_model"></a-entity>
 
             <a-entity id="sensorama"  scale="0.1 0.1 0.1" position="0.5 0.2 1" gltf-model="#sensorama_model"></a-entity>
             <a-entity id="coffee_table"  scale="0.7 1 0.7" rotation="0 90 0" position="-0.25 0 -1.25" gltf-model="#table_model"></a-entity>
