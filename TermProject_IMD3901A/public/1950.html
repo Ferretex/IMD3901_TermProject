@@ -29,7 +29,7 @@
             </a-assets>
 
             <!-- Handle the Nav mesh (movment limitations) here-->
-            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 -3" scale="0.8 0.8 0.8" nav-mesh></a-entity>
+            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 -3" scale="1 1 1" nav-mesh></a-entity>
 
             <a-entity id="rig" movement-controls="controls: keyboard, touch; speed: 0.5; constrainToNavMesh: true;">
                 <a-entity id="player" position="0 1.6 0" camera look-controls>
@@ -48,46 +48,46 @@
             <!-- Create all your objects here-->
 
             <!-- Images -->
-            <a-entity   id="sensorama1_image" position="-2.4 1.7 -3.2" rotation="0 90 0" scale="1 1 1"
+            <a-entity   id="sensorama1_image" position="-3.25 1.7 -3.2" rotation="0 90 0" scale="1 1 1"
                         geometry="primitive:plane; width:1.5; height:1.0;"
                         material="src:#sensorama1_img;">
             </a-entity>
-            <a-entity   id="sensorama2_image" position="-2.4 1.7 -5.2" rotation="0 90 0" scale="1 1 1"
+            <a-entity   id="sensorama2_image" position="-3.25 1.7 -5.2" rotation="0 90 0" scale="1 1 1"
                         geometry="primitive:plane; width:1.5; height:1.0;"
                         material="src:#sensorama2_img;">
             </a-entity>
-            <a-entity   id="sensorama1_image" position="2.4 1.7 -3.2" rotation="0 -90 0" scale="1 1 1"
+            <a-entity   id="sensorama1_image" position="3.25 1.7 -3.2" rotation="0 -90 0" scale="1 1 1"
                         geometry="primitive:plane; width:1.5; height:1.0;"
                         material="src:#sensorama1_img;">
             </a-entity>
-            <a-entity   id="sensorama2_image" position="2.4 1.7 -5.2" rotation="0 -90 0" scale="1 1 1"
+            <a-entity   id="sensorama2_image" position="3.25 1.7 -5.2" rotation="0 -90 0" scale="1 1 1"
                         geometry="primitive:plane; width:1.5; height:1.0;"
                         material="src:#sensorama2_img;">
             </a-entity>
             
             <!-- Image text -->
-            <a-entity id="sensorama_plane" position="-2.2 0.5 -3" rotation="-40 90 0" scale="1 1 1">
+            <a-entity id="sensorama_plane" position="-3.1 0.5 -3" rotation="-40 90 0" scale="1 1 1">
                 <a-entity geometry="primitive:box; width:1.8; height:0.8; depth:0.05;" material="color:white;" position="0.2 0 0" shadow></a-entity>
                 <a-entity text="value:Sensorama; 
                         color:black; font:roboto; width:1; anchor:left; baseline:top; wrapCount:16;" position="-0.5 0.3 0.05" ></a-entity>
                 <a-entity text="value:In the mid 1950s cinematographer Morton Heilig developed the Sensorama (patented 1962) which was an arcade-style theatre cabinet that would stimulate all the senses, not just sight and sound. It featured stereo speakers, a stereoscopic 3D display, fans, smell generators and a vibrating chair.;
                         color:black; font:roboto; width:1.5; anchor:left; baseline:top; wrapCount:38;" position="-0.6 0.2 0.05" ></a-entity>
             </a-entity>
-            <a-entity id="sensorama2_plane" position="-2.2 0.5 -5" rotation="-40 90 0" scale="1 1 1">
+            <a-entity id="sensorama2_plane" position="-3.1 0.5 -5" rotation="-40 90 0" scale="1 1 1">
                 <a-entity geometry="primitive:box; width:1.8; height:0.8; depth:0.05;" material="color:white;" position="0.2 0 0" shadow></a-entity>
                 <a-entity text="value:Sensorama; 
                         color:black; font:roboto; width:1; anchor:left; baseline:top; wrapCount:16;" position="-0.5 0.3 0.05" ></a-entity>
                 <a-entity text="value:In the mid 1950s cinematographer Morton Heilig developed the Sensorama (patented 1962) which was an arcade-style theatre cabinet that would stimulate all the senses, not just sight and sound. It featured stereo speakers, a stereoscopic 3D display, fans, smell generators and a vibrating chair.;
                         color:black; font:roboto; width:1.5; anchor:left; baseline:top; wrapCount:38;" position="-0.6 0.2 0.05" ></a-entity>
             </a-entity>
-            <a-entity id="sensorama_plane" position="2.2 0.5 -3.3" rotation="-40 -90 0" scale="1 1 1">
+            <a-entity id="sensorama_plane" position="3.1 0.5 -3.3" rotation="-40 -90 0" scale="1 1 1">
                 <a-entity geometry="primitive:box; width:1.8; height:0.8; depth:0.05;" material="color:white;" position="0.2 0 0" shadow></a-entity>
                 <a-entity text="value:Sensorama; 
                         color:black; font:roboto; width:1; anchor:left; baseline:top; wrapCount:16;" position="-0.5 0.3 0.05" ></a-entity>
                 <a-entity text="value:In the mid 1950s cinematographer Morton Heilig developed the Sensorama (patented 1962) which was an arcade-style theatre cabinet that would stimulate all the senses, not just sight and sound. It featured stereo speakers, a stereoscopic 3D display, fans, smell generators and a vibrating chair.;
                         color:black; font:roboto; width:1.5; anchor:left; baseline:top; wrapCount:38;" position="-0.6 0.2 0.05" ></a-entity>
             </a-entity>
-            <a-entity id="sensorama2_plane" position="2.2 0.5 -5.3" rotation="-40 -90 0" scale="1 1 1">
+            <a-entity id="sensorama2_plane" position="3.1 0.5 -5.3" rotation="-40 -90 0" scale="1 1 1">
                 <a-entity geometry="primitive:box; width:1.8; height:0.8; depth:0.05;" material="color:white;" position="0.2 0 0" shadow></a-entity>
                 <a-entity text="value:Sensorama; 
                         color:black; font:roboto; width:1; anchor:left; baseline:top; wrapCount:16;" position="-0.5 0.3 0.05" ></a-entity>
@@ -103,14 +103,14 @@
 
             <a-entity id="nasaView" scale="0.2 0.2 0.2" position="0 1.2 -2" rotation="0 180 0" gltf-model="#nasaview_model"></a-entity>
 
-            <a-entity id="sensorama"  scale="0.1 0.1 0.1" position="0.5 0.2 1" gltf-model="#sensorama_model"></a-entity>
+            <a-entity id="sensorama"  scale="0.1 0.1 0.1" position="0 0.2 -5.25" gltf-model="#sensorama_model"></a-entity>
             <a-entity id="coffee_table"  scale="0.7 1 0.7" rotation="0 90 0" position="-0.25 0 -1.25" gltf-model="#table_model"></a-entity>
 
             <!-- Environment objects-->
-            <a-entity id="roof" scale="0.7 0.7 0.7" position="0 3.9 -3" gltf-model="#roof_model"></a-entity>
+            <a-entity id="roof" scale="0.9 0.7 0.9" position="0 3.9 -3" gltf-model="#roof_model"></a-entity>
             <a-entity id="roomPos" position="0 0.1 -3">
                 <a-entity id="roomRot" rotation="0 0 0">
-                    <a-entity  id="walls" scale="0.5 0.5 0.5" gltf-model="#walls_model"></a-entity>
+                    <a-entity  id="walls" scale="0.7 0.5 0.7" gltf-model="#walls_model"></a-entity>
                 </a-entity>
             </a-entity>
 
