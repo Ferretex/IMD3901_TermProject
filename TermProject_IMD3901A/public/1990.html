@@ -26,7 +26,7 @@
             </a-assets>
 
             <!-- Handle the Nav mesh (movment limitations) here-->
-            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 -3" scale=".5 1 .5" nav-mesh></a-entity>
+            <a-entity id="walKMesh" class="navMesh" gltf-model="#floor_model" position="0 0 -3" scale="0.35 1 0.35" nav-mesh></a-entity>
 
             <a-entity id="rig" movement-controls="controls: keyboard, touch; speed: 0.5; constrainToNavMesh: true;">
                 <a-entity id="player" position="0 1.6 0" camera look-controls>
@@ -102,7 +102,7 @@
             <a-entity id="roof" scale="0.9 0.7 0.9" position="0 3.9 -3" gltf-model="#roof_model"></a-entity>
             <a-entity id="roomPos" position="0 0.1 -3">
                 <a-entity id="roomRot" rotation="0 0 0">
-                    <a-entity  id="walls" scale="0.3 0.5 0.3" gltf-model="#walls_model"></a-entity>
+                    <a-entity  id="walls" scale="0.225 -0.225 0.225" gltf-model="#walls_model"></a-entity>
                 </a-entity>
             </a-entity>
 
